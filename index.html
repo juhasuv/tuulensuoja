@@ -21,7 +21,10 @@
 
   <!-- Custom CSS -->
   <style>
-    /* Add any custom styles here */
+    .text-primary {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+    }
   </style>
 </head>
 
@@ -76,8 +79,7 @@
           <img src="IMG20230612144023.jpg" alt="" class="img-fluid">
 		  <h3 class="display-6">Pihapiirin kunnostus</h3>
         <p>Hirsitalon kauneus kukoistaa vasta, kun se ympäröidään hoidetulla ja houkuttelevalla pihapiirillä. Pihapiirin kunnostusprojektimme alkoi ymmärtämisestä. Tutkimme huolellisesti ympäristön luonnonpiirteitä, kuten kasvillisuutta, maastoa ja maisemaa, jotta voimme luoda harmonisen suunnitelman, joka sulautuu ympäristöön saumattomasti. Käytämme luonnonmukaisia menetelmiä, jotka edistävät kestävää kehitystä ja ympäristön suojelua. Suunnittelemme piha-alueen siten, että se tarjoaa sekä toiminnallisuutta että kauneutta, joka kutsuu meidät ja vierailijat nauttimaan ulkotiloista.</p>
-        
-  		  <a href="#" class="btn btn-warning">🌱</a>
+  		  <a href="#" class="btn btn-warning">🏡</a>
         </div>
       </div>
     </div>
@@ -96,7 +98,7 @@
               <p class="card-text">Tervetuloa viettämään kesää ainutlaatuisessa ympäristössä, kun loimme tunnelmallisen kesäkahvilan kauniiseen pihapiiriin. Tarjoamme sinulle mahdollisuuden nauttia herkullisista mauista ja rentoutua idyllisessä ympäristössä. Olemme kiinnittäneet erityistä huomiota yksityiskohtiin ja luoneet ainutlaatuisen kokemuksen kaikille aisteille.</p>
               <p class="card-text">Astuessasi sisään vanhaan navettaan tehtyyn kesäkahvilaamme, sinut kietoo välittömästi lämmin tunnelma ja aurinkoisen päivän hehku. Pihapiirin vihreys ja luonnonläheisyys luovat rauhallisen ja rentouttavan ympäristön, jossa voit paeta arjen kiireitä hetkeksi. Tunnelmallisesti sisustettu kahvila ja sen ulkotilat tarjoavat viihtyisät istumapaikat, joissa voit nauttia herkullisista tarjoiluistamme ja viettää aikaa ystävien ja perheen kanssa.</p>
 			  <p class="card-text">Kesäkahvilamme valikoima on suunniteltu houkuttelemaan makunystyröitäsi. Tarjoamme tuoreita leivonnaisia, kuten vastapaistettuja pullia, herkullisia kakkuja ja kevyitä piirakoita. Voit myös valita raikkaita salaatteja, täytettyjä leipiä tai virkistäviä juomia. Panostamme paikallisiin raaka-aineisiin ja sesongin tuoreisiin herkkuihin varmistaaksemme parhaan mahdollisen maun jokaisessa annoksessa.</p>
-			  <a href="#" class="btn btn-warning">Lue lisää</a>
+			  <a href="#" class="btn btn-warning">☕</a>
             </div>
           </div>
         </div>
@@ -107,7 +109,7 @@
               <h4 class="card-title">Historiallinen lumo valkokankaalla - Elokuvateatteri vanhassa navetassa</h4>
               <p class="card-text">Käydessäsi sisään vanhaan navettaan rakennettavaan elokuvateatteriin, astut samalla aikamatkalle menneisyyteen. Kuvittele hetki, kuinka navetan kunnianarvoisat seinät ja rustiikkiset yksityiskohdat kietovat sinut ympärilleen, luoden ainutlaatuisen ja tunnelmallisen ympäristön elokuvien lumoavalle maailmalle. Olemme herättäneet tämän historiallisen tilan uudelleen eloon luodaksemme unohtumattomia elokuvakokemuksia perhepiirimme ja ystäviemme parissa.</p>
 			  <p class="card-text">Elokuvateatterissa valtaa välittömästi nostalgian ja historiallisen viehätyksen tunne. Navetan alkuperäiset rakenteet ja koristeelliset yksityiskohdat luovat ainutlaatuisen ja intiimin ilmapiirin. Vanhat puupalkit ja hirsiseinät tuovat esiin tilan ainutlaatuisen historian ja antavat elokuville arvokkaan taustan. Tunnelma on samanaikaisesti kiehtova ja kutsuva, tarjoten ainutlaatuisen elokuvakokemuksen.</p>
-              <a href="#" class="btn btn-warning">Lue lisää</a>
+              <a href="#" class="btn btn-warning">🎬</a>
             </div>
           </div>
         </div>
@@ -118,7 +120,7 @@
               <h4 class="card-title">Luonnon runsauden keskellä - Kasvi- ja yrttitarha pihapiirissä</h4>
               <p class="card-text">Tervetuloa astumaan luonnon vihreään keitaaseen, kun tutustumme pihapiirissä sijaitsevaan kasvi- ja yrttitarhaan. Tämä viehättävä ja monipuolinen puutarha tarjoaa mahdollisuuden uppoutua kasvien ja yrttien runsauteen sekä kokea luonnon voiman ja kauneuden. Koitimme luoda kuvauksellisen ja inspiroivan ympäristön, joka innostaa tutkimaan, oppimaan ja nauttimaan kasvien maailmasta.</p>
               <p class="card-text">Kasvi- ja yrttitarhamme perustuu terveellisyyteen ja kestävyyteen. Olemme huolella valinneet monipuolisen valikoiman kasveja ja yrttejä, jotka tarjoavat sekä ravitsevia että maistuvia herkkuja. Panostamme myös kestävän kehityksen periaatteisiin ja käytämme luonnonmukaisia viljelymenetelmiä varmistaaksemme, että puutarhamme on ympäristöystävällinen.</p>
-			  <a href="#" class="btn btn-warning">Lue lisää</a>
+			  <a href="#" class="btn btn-warning">🌱</a>
             </div>
           </div>
         </div>
@@ -143,15 +145,15 @@
         <div class="col-lg-6">
           <form>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Nimesi">
+              <input type="text" class="form-control mb-2" placeholder="Nimesi">
             </div>
             <div class="form-group">
-              <input type="email" class="form-control" placeholder="Sähköpostisi">
+              <input type="email" class="form-control mb-2" placeholder="Sähköpostisi">
             </div>
             <div class="form-group">
               <textarea class="form-control" rows="5" placeholder="Viestisi"></textarea>
             </div>
-            <button type="submit" class="btn btn-warning mt-2">Lähetä viesti</button>
+            <button type="submit" class="btn btn-warning mt-2">✉</button>
           </form>
         </div>
       </div>
@@ -161,7 +163,7 @@
   <!-- Footer -->
   <footer class="footer bg-dark text-white text-center py-3">
     <div class="container">
-      <span>&copy; 2023 Tuulensuoja.</span>
+      <span>&copy; 2023 Tuulensuoja 🏡</span>
     </div>
   </footer>
 
