@@ -21,10 +21,12 @@
   <link rel="canonical" href="http://tuulensuoja.life/">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="bootstrap.min.css" media="screen">
+  <link rel="preload" href="bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" media="screen">
+  <noscript><link rel="stylesheet" href="bootstrap.min.css" media="screen"></noscript>
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="styles.css" media="screen">
+  <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'" media="screen">
+  <noscript><link rel="stylesheet" href="styles.css" media="screen"></noscript>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -80,7 +82,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <img src="pihapiiri.webp" width="960" height="432" alt="kuva pihapiiristä" class="img-fluid">
+          <img srcset="pihapiiri-4x.webp 4x, pihapiiri-2x.webp 2x" src="pihapiiri-4x.webp" width="960" height="432" alt="kuva pihapiiristä" class="img-fluid">
         </div>
         <div class="col-lg-6">
           <h2 class="display-4 mt-3">Vanhan hirsitalon remontointi 🏡</h2>
