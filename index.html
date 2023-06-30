@@ -2,9 +2,16 @@
 <html lang="fi">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Tuulensuoja">
+  <meta name="title" content="Tuulensuoja">
+  <meta name="description" content="Projektina melkein 100-vuotias hirsitalo ja pihapiiri Orivedellä, Pirkanmaalla.">
+  <meta name="keywords" content="hirsitalo, Orivesi">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="Finnish">
+  <meta name="author" content="Juha Suvanto" />
+  <meta http-equiv="expires" content="43200"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   
   <title>Tuulensuoja</title>
 
@@ -15,7 +22,10 @@
   <link rel="canonical" href="http://tuulensuoja.life/">
 
   <!-- Bootstrap CSS -->
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <!--
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  -->
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,15 +33,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
   <!-- Custom CSS -->
-  <style>
-    body {
-    font-family: 'Lato', sans-serif;
-    }
-  </style>
+  <link href="styles.css" rel="stylesheet">
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/5d599f1657.js" crossorigin="anonymous"></script>
-
 
 </head>
 
@@ -39,38 +44,41 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-    <a class="navbar-brand" href="#">Tuulensuoja 🏡</a>
+    <a class="navbar-brand" href="#home">Tuulensuoja 🏡</a>
+    <!--
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">👨‍🌾</a>
+          <a class="nav-link" href="#navbar">👨‍🌾</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Meistä</a>
+          <a class="nav-link" href="#about">Meistä</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Muut projektit</a>
+          <a class="nav-link" href="#projects">Muut projektit</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Ota yhteyttä</a>
+          <a class="nav-link" href="#contact">Ota yhteyttä</a>
         </li>
       </ul>
     </div>
+    -->
    </div>
   </nav>
 
   <!-- Hero Section -->
-  <header class="hero bg-warning text-white text-center py-5">
-    <div class="container">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a2d9ff" fill-opacity="1" d="M0,128L30,144C60,160,120,192,180,192C240,192,300,160,360,122.7C420,85,480,43,540,42.7C600,43,660,85,720,112C780,139,840,149,900,149.3C960,149,1020,139,1080,117.3C1140,96,1200,64,1260,80C1320,96,1380,160,1410,192L1440,224L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg>
+  <header class="hero text-center py-5">
+    <div class="container hero">
+
       <h1 class="display-4">Projektina melkein 100-vuotias hirsitalo ja pihapiiri Orivedellä, Pirkanmaalla.</h1>
-      <p class="lead">Tervetuloa tutustumaan projektiimme, jossa kunnostamme perinteitä kunnioittaen vanhan hirsitalon ja sen pihapiirin uuteen loistoon. Tuulensuoja on kokenut monet arvokkaat vuodet ja tarinat, ja nyt se ansaitsee remontointia rauhakseltaan ja pihapiirin kunnostamista.</p>
+      <p class="lead">Tervetuloa tutustumaan Tuulensuojaan, jossa perinteitä kunnioittaen kunnostamme rauhalleen vanhan hirsitalon ja sen pihapiirin uuteen loistoon. </p>
       <p>💖</p>
-      <p>Aino 👩‍🌾 & Juha 👨‍🌾</p>
-      <p>Ps. Viimeisimmät kuulumiset näet ja kuulet Instagramissa Ainon <a href="https://www.instagram.com/koti_tuulensuojassa/" class="btn btn-dark">@koti_tuulensuojassa</a> -tililtä.</p>
-      
+      <p>Aino & Juha</p>
+      <p>Ps. Viimeisimmät kuulumiset näet ja kuulet Instagramissa Ainon <a href="https://www.instagram.com/koti_tuulensuojassa/" class="">@koti_tuulensuojassa</a> -tililtä.</p>
     </div>
   </header>
 
@@ -79,57 +87,62 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <img src="IMG20230520165609.jpg" alt="" class="img-fluid">
+          <img src="pihapiiri.webp" alt="" class="img-fluid">
         </div>
         <div class="col-lg-6">
           <h2 class="display-4 mt-3">Vanhan hirsitalon remontointi 🏡</h2>
-          <p>Kohta 100-vuotiaan hirsitalon remontointi on ainutlaatuinen haaste, johon pitää tarttua asiantuntemuksella ja huolellisella suunnittelulla. Rakennuksen nykytilan arvioinnin kautta pystymme tekemään yksityiskohtaisen kartoituksen sen tarvitsemista korjauksista. Kunnioittaen vanhan talon alkuperäistä tyyliä ja arkkitehtuuria, työskentelemme yhdessä asiantuntijoiden kanssa suunnitellessamme modernin päivityksen, joka säilyttää samalla perinteikkään tunnelman. Käytämme laadukkaita materiaaleja ja luotettavia käsityöläisiä varmistaaksemme remontin kestävyyden ja kestävän kehityksen periaatteiden noudattamisen.</p>
-          <img src="IMG20230612144023.jpg" alt="" class="img-fluid">
-		  <h3 class="display-6 mt-3">Pihapiirin kunnostus 🌱</h3>
-        <p>Hirsitalon kauneus kukoistaa vasta, kun se ympäröidään hoidetulla ja houkuttelevalla pihapiirillä. Pihapiirin kunnostusprojektimme alkoi ymmärtämisestä. Tutkimme huolellisesti ympäristön luonnonpiirteitä, kuten kasvillisuutta, maastoa ja maisemaa, jotta voimme luoda harmonisen suunnitelman, joka sulautuu ympäristöön saumattomasti. Käytämme luonnonmukaisia menetelmiä, jotka edistävät kestävää kehitystä ja ympäristön suojelua. Suunnittelemme piha-alueen siten, että se tarjoaa sekä toiminnallisuutta että kauneutta, joka kutsuu meidät ja vierailijat nauttimaan ulkotiloista.</p>
-  		  <a href="#" class="btn btn-dark">⭐</a>
+          <p>Kohta 100-vuotiaan hirsitalon remontointi on ainutlaatuinen haaste, johon pitää tarttua asiantuntemuksella ja huolellisella suunnittelulla.</p>
+          <img src="puutarha.webp" alt="" class="img-fluid">
+		      <h3 class="display-6 mt-3">Pihapiirin kunnostus 🌱</h3>
+          <p>Olemme löytäneet tontilta uskomattoman määrän erilaisia kasveja ja puita kuten kuusi, mänty, koivu, vaahtera, haapa, tammi, pihlaja, kataja, hevoskastanja, omenapuu, kirsikkapuu, tuomi, syreeni, juhannusruusu, metsämansikka, villivadelma, mustaherukka, punaherukka, karviainen, jne</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section class="services bg-light py-5">
+  <!-- Projects Section -->
+  <section class="projects bg-light py-5">
     <div class="container">
       <h3 class="display-4 text-center mb-5">Muut projektit</h3>
       <div class="row">
         <div class="col-lg-4">
           <div class="card mb-4">
-            <img src="IMG20230611141847.jpg" alt="Service 1" class="card-img-top">
+            <img src="kesakahvila.webp" alt="" class="card-img-top">
             <div class="card-body">
               <h4 class="card-title">Kesän makuja ja rentoutumista - Kesäkahvila pihapiirissä</h4>
               <p class="card-text">Tervetuloa viettämään kesää ainutlaatuisessa ympäristössä, kun loimme tunnelmallisen kesäkahvilan kauniiseen pihapiiriin. Tarjoamme sinulle mahdollisuuden nauttia herkullisista mauista ja rentoutua idyllisessä ympäristössä. Olemme kiinnittäneet erityistä huomiota yksityiskohtiin ja luoneet ainutlaatuisen kokemuksen kaikille aisteille.</p>
+              <!--
               <p class="card-text">Astuessasi sisään vanhaan navettaan tehtyyn kesäkahvilaamme, sinut kietoo välittömästi lämmin tunnelma ja aurinkoisen päivän hehku. Pihapiirin vihreys ja luonnonläheisyys luovat rauhallisen ja rentouttavan ympäristön, jossa voit paeta arjen kiireitä hetkeksi. Tunnelmallisesti sisustettu kahvila ja sen ulkotilat tarjoavat viihtyisät istumapaikat, joissa voit nauttia herkullisista tarjoiluistamme ja viettää aikaa ystävien ja perheen kanssa.</p>
-			  <p class="card-text">Kesäkahvilamme valikoima on suunniteltu houkuttelemaan makunystyröitäsi. Tarjoamme tuoreita leivonnaisia, kuten vastapaistettuja pullia, herkullisia kakkuja ja kevyitä piirakoita. Voit myös valita raikkaita salaatteja, täytettyjä leipiä tai virkistäviä juomia. Panostamme paikallisiin raaka-aineisiin ja sesongin tuoreisiin herkkuihin varmistaaksemme parhaan mahdollisen maun jokaisessa annoksessa.</p>
-        <p>Avoinna kesäsunnuntaisin! Tarkista aukioloajat Instagramista!</p>
-			  <a href="#" class="btn btn-warning">☕</a>
+			        <p class="card-text">Kesäkahvilamme valikoima on suunniteltu houkuttelemaan makunystyröitäsi. Tarjoamme tuoreita leivonnaisia, kuten vastapaistettuja pullia, herkullisia kakkuja ja kevyitä piirakoita. Voit myös valita raikkaita salaatteja, täytettyjä leipiä tai virkistäviä juomia. Panostamme paikallisiin raaka-aineisiin ja sesongin tuoreisiin herkkuihin varmistaaksemme parhaan mahdollisen maun jokaisessa annoksessa.</p>
+              -->
+              <p>Avoinna kesäsunnuntaisin! Tarkista aukioloajat Instagramista tai kahvilan sivuilta!</p>
+			        <a href="https://tuulensuoja.life/kahvila" class="btn btn-light">Lisätietoja ☕</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="card mb-4">
-            <img src="IMG20230611120402.jpg" alt="Service 2" class="card-img-top">
+            <img src="tuolit.webp" alt="" class="card-img-top">
             <div class="card-body">
               <h4 class="card-title">Historiallinen lumo valkokankaalla - Elokuvateatteri vanhassa navetassa</h4>
+              <!--
               <p class="card-text">Käydessäsi sisään vanhaan navettaan rakennettavaan elokuvateatteriin, astut samalla aikamatkalle menneisyyteen. Kuvittele hetki, kuinka navetan kunnianarvoisat seinät ja rustiikkiset yksityiskohdat kietovat sinut ympärilleen, luoden ainutlaatuisen ja tunnelmallisen ympäristön elokuvien lumoavalle maailmalle. Olemme herättäneet tämän historiallisen tilan uudelleen eloon luodaksemme unohtumattomia elokuvakokemuksia perhepiirimme ja ystäviemme parissa.</p>
-			  <p class="card-text">Elokuvateatterissa valtaa välittömästi nostalgian ja historiallisen viehätyksen tunne. Navetan alkuperäiset rakenteet ja koristeelliset yksityiskohdat luovat ainutlaatuisen ja intiimin ilmapiirin. Vanhat puupalkit ja hirsiseinät tuovat esiin tilan ainutlaatuisen historian ja antavat elokuville arvokkaan taustan. Tunnelma on samanaikaisesti kiehtova ja kutsuva, tarjoten ainutlaatuisen elokuvakokemuksen.</p>
-              <a href="#" class="btn btn-warning">🎬</a>
+			        <p class="card-text">Elokuvateatterissa valtaa välittömästi nostalgian ja historiallisen viehätyksen tunne. Navetan alkuperäiset rakenteet ja koristeelliset yksityiskohdat luovat ainutlaatuisen ja intiimin ilmapiirin. Vanhat puupalkit ja hirsiseinät tuovat esiin tilan ainutlaatuisen historian ja antavat elokuville arvokkaan taustan. Tunnelma on samanaikaisesti kiehtova ja kutsuva, tarjoten ainutlaatuisen elokuvakokemuksen.</p>
+              <a href="#elokuvateatteri" class="btn btn-warning">Lisätietoja 🎬</a>
+              -->
             </div>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="card mb-4">
-            <img src="IMG20230601203939.jpg" alt="Service 3" class="card-img-top">
+            <img src="kuisti.webp" alt="" class="card-img-top">
             <div class="card-body">
-              <h4 class="card-title">Luonnon runsauden keskellä - Kasvi- ja yrttitarha pihapiirissä</h4>
+              <h4 class="card-title">Luonnon runsauden keskellä - Kasvit ja yrtit</h4>
+              <!--
               <p class="card-text">Tervetuloa astumaan luonnon vihreään keitaaseen, kun tutustumme pihapiirissä sijaitsevaan kasvi- ja yrttitarhaan. Tämä viehättävä ja monipuolinen puutarha tarjoaa mahdollisuuden uppoutua kasvien ja yrttien runsauteen sekä kokea luonnon voiman ja kauneuden. Koitimme luoda kuvauksellisen ja inspiroivan ympäristön, joka innostaa tutkimaan, oppimaan ja nauttimaan kasvien maailmasta.</p>
               <p class="card-text">Kasvi- ja yrttitarhamme perustuu terveellisyyteen ja kestävyyteen. Olemme huolella valinneet monipuolisen valikoiman kasveja ja yrttejä, jotka tarjoavat sekä ravitsevia että maistuvia herkkuja. Panostamme myös kestävän kehityksen periaatteisiin ja käytämme luonnonmukaisia viljelymenetelmiä varmistaaksemme, että puutarhamme on ympäristöystävällinen.</p>
-			  <a href="#" class="btn btn-warning">🌱</a>
+			        <a href="#kasvitarha" class="btn btn-warning">Lisätietoja 🌱</a>
+              -->
             </div>
           </div>
         </div>
@@ -143,14 +156,15 @@
       <div class="row">
         <div class="col-lg-6">
           <h2 class="display-4">Ota yhteyttä</h2>
-          <p>Heräsikö ajatuksia tai kysymyksiä? Meihin voit olla yhteydessä sähköpostitse tai Instagramin kautta.</p>
+          <p>Heräsikö ajatuksia tai kysymyksiä? Meihin voit olla yhteydessä mm. Instagramin kautta.</p>
           <ul class="list-unstyled">
             <li><i class="fas fa-phone-alt"></i> Puhelin: +358 41 529 5621</li>
-            <li><i class="fas fa-envelope"></i> Sähköposti: moi@tuulensuoja.life_</li>
+            <li><i class="fas fa-envelope"></i> Sähköposti: moi@tuulensuoja.life</li>
             <li><i class="fa fa-instagram"></i> Instagram: <a href="https://www.instagram.com/koti_tuulensuojassa/">@koti_tuulensuojassa</a></li>
             <li><i class="fas fa-map-marker-alt"></i> Osoite: Lastaajantie 4, Orivesi As</li>
           </ul>
         </div>
+        <!--
         <div class="col-lg-6">
           <form>
             <div class="form-group">
@@ -165,6 +179,7 @@
             <button type="submit" class="btn btn-warning mt-2">Lähetä ✉</button>
           </form>
         </div>
+        -->
       </div>
     </div>
   </section>
@@ -177,9 +192,9 @@
   </footer>
 
   <!-- Bootstrap JS -->
-  
+  <!--
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  
+  -->
 </body>
 
 </html>
